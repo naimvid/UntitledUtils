@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "untitledutils",
+	"version": "${version}",
+	"name": "UntitledUtils",
+	"description": "Quality of life changes for minecraft",
+	"authors": [
+		"Fennect"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/untitledutils/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"naimv.untitledutils.UntitledUtils"
+		],
+		"client": [
+			"naimv.untitledutils.UntitledUtilsClient"
+		],
+		"fabric-datagen": [
+			"naimv.untitledutils.UntitledUtilsDataGenerator"
+		]
+	},
+	"mixins": [
+		"untitledutils.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.23",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
